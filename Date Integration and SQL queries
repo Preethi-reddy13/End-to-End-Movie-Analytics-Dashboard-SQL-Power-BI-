@@ -1,8 +1,24 @@
-Data Import into SQL Server :
+🔗 Data Import into SQL Server :
 
 Used SQL Server - Table data Import Wizard
 
 Imported CSV file into SQL table (unclean_data)
+
+🔗 SQL Database Integration with Power BI:
+
+After cleaning and transforming the dataset in SQL Server, the cleaned table was connected directly to Power BI for visualization and analysis.
+
+Connection Process:
+
+1️⃣ Open Power BI Desktop
+2️⃣ Selected Get Data → SQL Server Databse
+3️⃣ Entered:
+           Server Name
+           Database Name
+4️⃣ Selected Import Mode
+5️⃣ Loaded the cleaned table 
+6️⃣ Verified data preview and loaded into Power BI
+
 
 Use the following queries to clean the data:
 
