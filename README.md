@@ -17,9 +17,9 @@ This gives a clear end-to-end workflow view before going into detailed explanati
 # 🛠 Tools & Technologies Used
 
 - Kaggle Dataset
-- SQL Server
-- SQL (Data Cleaning & Transformation)
+- SQL Server 
 - SQL Server Import Wizard
+- SQL (Data Cleaning & Transformation) 
 - DAX
 - Power BI
 ---
