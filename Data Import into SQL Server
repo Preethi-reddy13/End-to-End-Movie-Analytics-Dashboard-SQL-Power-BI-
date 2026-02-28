@@ -1,0 +1,27 @@
+Data Import into SQL Server :
+
+Used SQL Server - Table data Import Wizard
+
+Imported CSV file into SQL table (unclean_data)
+
+Use the following queries to clean the data:
+
+select * from unclean_data;
+
+ALTER TABLE unclean_data drop COLUMN `title_year_[0]`;
+
+update unclean_data set movie_title = left(movie_title,length(movie_title)-2) where movie_title like "%?ÿ";
+update unclean_data set movie_title = left(movie_title,length(movie_title)-1) where movie_title like "%?";
+
+ALTER TABLE unclean_data MODIFY duration INT;
+ALTER TABLE unclean_data MODIFY DIRECTOR_facebook_likes INT;
+ALTER TABLE unclean_data MODIFY facenumber_in_poster INT;
+UPDATE unclean_data SET  DIRECTOR_facebook_likes= TRIM(trailing '"' FROM DIRECTOR_facebook_likes);
+UPDATE unclean_data SET  DIRECTOR_facebook_likes= TRIM(leading '"' FROM DIRECTOR_facebook_likes);
+
+update unclean_data set duration= (select avg_n from (select round(avg(duration)) as avg_n from unclean_data) as temp) where duration = "";
+update unclean_data set facenumber_in_poster = 0 where facenumber_in_poster = "";
+
+select avg(duration) from unclean_data;
+
+desc unclean_data;
