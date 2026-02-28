@@ -26,12 +26,12 @@ This gives a clear end-to-end workflow view before going into detailed explanati
 # 🚀 Project Outcome
 Through this project, I gained hands-on experience in:
 
--Importing a raw CSV dataset into SQL Server using SQL Server Import Wizard
--Managing and validating data inside a relational database
--Performing data cleaning and transformation using SQL queries
--Connecting SQL Server database to Power BI
--Creating calculated business metrics such as Profit
--Building interactive dashboards using DAX and visualization tools
+- Importing a raw CSV dataset into SQL Server using SQL Server Import Wizard
+- Managing and validating data inside a relational database
+- Performing data cleaning and transformation using SQL queries
+- Connecting SQL Server database to Power BI
+- Creating calculated business metrics such as Profit
+- Building interactive dashboards using DAX and visualization tools
 -Generating business insights from structured data
 
 This project strengthened my understanding of the complete data analytics workflow.
